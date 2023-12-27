@@ -1,0 +1,14 @@
+import express from "express"
+import http from 'http'
+
+const server = express()
+const httpServer = http.createServer(serv
+
+server.use(express.static(__dirname + '/publico'))
+
+io.on('connection', (socket) => {
+    console.log('nueva conexion:', socket.id)
+})
+
+httpServer.listen(3000)
+console.log("server iniciado en el PUERTO :..3000")
